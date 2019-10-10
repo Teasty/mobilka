@@ -3,25 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A1A587CEC931BAD03EE3E39 /* Pods_mobilka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6FC934A7E10902F06D6B95 /* Pods_mobilka.framework */; };
+		A97785F6234F4E6B000D672A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F0234F4E6B000D672A /* LoginPresenter.swift */; };
+		A97785F7234F4E6B000D672A /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F1234F4E6B000D672A /* LoginWorker.swift */; };
+		A97785F8234F4E6B000D672A /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F2234F4E6B000D672A /* LoginRouter.swift */; };
+		A97785F9234F4E6B000D672A /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F3234F4E6B000D672A /* LoginModels.swift */; };
+		A97785FA234F4E6B000D672A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F4234F4E6B000D672A /* LoginViewController.swift */; };
+		A97785FB234F4E6B000D672A /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F5234F4E6B000D672A /* LoginInteractor.swift */; };
 		A9B1006B234F44140031D3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1006A234F44140031D3D6 /* AppDelegate.swift */; };
-		A9B1006D234F44140031D3D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1006C234F44140031D3D6 /* ViewController.swift */; };
 		A9B10070234F44140031D3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B1006E234F44140031D3D6 /* Main.storyboard */; };
 		A9B10072234F44150031D3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9B10071234F44150031D3D6 /* Assets.xcassets */; };
 		A9B10075234F44150031D3D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B10073234F44150031D3D6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E6FC934A7E10902F06D6B95 /* Pods_mobilka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobilka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1E8E15ACF150139EF429EA /* Pods-mobilka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilka.debug.xcconfig"; path = "Target Support Files/Pods-mobilka/Pods-mobilka.debug.xcconfig"; sourceTree = "<group>"; };
+		A97785F0234F4E6B000D672A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		A97785F1234F4E6B000D672A /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
+		A97785F2234F4E6B000D672A /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		A97785F3234F4E6B000D672A /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		A97785F4234F4E6B000D672A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A97785F5234F4E6B000D672A /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		A9B10067234F44140031D3D6 /* mobilka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobilka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B1006A234F44140031D3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9B1006C234F44140031D3D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A9B1006F234F44140031D3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9B10071234F44150031D3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9B10074234F44150031D3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9B10076234F44150031D3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1CB77C84FE19C8DB5A7296F /* Pods-mobilka.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilka.release.xcconfig"; path = "Target Support Files/Pods-mobilka/Pods-mobilka.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,67 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1A587CEC931BAD03EE3E39 /* Pods_mobilka.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85FB09E7764857DA7A202607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E6FC934A7E10902F06D6B95 /* Pods_mobilka.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A97785EC234F4DE7000D672A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A97785ED234F4DF0000D672A /* LoginViewController */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A97785ED234F4DF0000D672A /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A97785F0234F4E6B000D672A /* LoginPresenter.swift */,
+				A97785F1234F4E6B000D672A /* LoginWorker.swift */,
+				A97785F2234F4E6B000D672A /* LoginRouter.swift */,
+				A97785F3234F4E6B000D672A /* LoginModels.swift */,
+				A97785F4234F4E6B000D672A /* LoginViewController.swift */,
+				A97785F5234F4E6B000D672A /* LoginInteractor.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		A97785EE234F4E03000D672A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A9B1006A234F44140031D3D6 /* AppDelegate.swift */,
+				A9B10076234F44150031D3D6 /* Info.plist */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A97785EF234F4E3A000D672A /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				A9B10073234F44150031D3D6 /* LaunchScreen.storyboard */,
+				A9B1006E234F44140031D3D6 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
 		A9B1005E234F44140031D3D6 = {
 			isa = PBXGroup;
 			children = (
 				A9B10069234F44140031D3D6 /* mobilka */,
 				A9B10068234F44140031D3D6 /* Products */,
+				CD4BE5A109BB509849DD6F17 /* Pods */,
+				85FB09E7764857DA7A202607 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +118,21 @@
 		A9B10069234F44140031D3D6 /* mobilka */ = {
 			isa = PBXGroup;
 			children = (
-				A9B1006A234F44140031D3D6 /* AppDelegate.swift */,
-				A9B1006C234F44140031D3D6 /* ViewController.swift */,
-				A9B1006E234F44140031D3D6 /* Main.storyboard */,
+				A97785EF234F4E3A000D672A /* StoryBoards */,
+				A97785EE234F4E03000D672A /* Common */,
+				A97785EC234F4DE7000D672A /* Modules */,
 				A9B10071234F44150031D3D6 /* Assets.xcassets */,
-				A9B10073234F44150031D3D6 /* LaunchScreen.storyboard */,
-				A9B10076234F44150031D3D6 /* Info.plist */,
 			);
 			path = mobilka;
+			sourceTree = "<group>";
+		};
+		CD4BE5A109BB509849DD6F17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E1E8E15ACF150139EF429EA /* Pods-mobilka.debug.xcconfig */,
+				D1CB77C84FE19C8DB5A7296F /* Pods-mobilka.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9B10079234F44150031D3D6 /* Build configuration list for PBXNativeTarget "mobilka" */;
 			buildPhases = (
+				E6A3B15A41424D239DA718DD /* [CP] Check Pods Manifest.lock */,
 				A9B10063234F44140031D3D6 /* Sources */,
 				A9B10064234F44140031D3D6 /* Frameworks */,
 				A9B10065234F44140031D3D6 /* Resources */,
+				6769F48DF9FB1228321EDB20 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +203,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6769F48DF9FB1228321EDB20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mobilka/Pods-mobilka-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mobilka/Pods-mobilka-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mobilka/Pods-mobilka-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6A3B15A41424D239DA718DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobilka-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9B10063234F44140031D3D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9B1006D234F44140031D3D6 /* ViewController.swift in Sources */,
+				A97785FA234F4E6B000D672A /* LoginViewController.swift in Sources */,
+				A97785F6234F4E6B000D672A /* LoginPresenter.swift in Sources */,
+				A97785FB234F4E6B000D672A /* LoginInteractor.swift in Sources */,
+				A97785F9234F4E6B000D672A /* LoginModels.swift in Sources */,
 				A9B1006B234F44140031D3D6 /* AppDelegate.swift in Sources */,
+				A97785F8234F4E6B000D672A /* LoginRouter.swift in Sources */,
+				A97785F7234F4E6B000D672A /* LoginWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +400,7 @@
 		};
 		A9B1007A234F44150031D3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E1E8E15ACF150139EF429EA /* Pods-mobilka.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +419,7 @@
 		};
 		A9B1007B234F44150031D3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1CB77C84FE19C8DB5A7296F /* Pods-mobilka.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
