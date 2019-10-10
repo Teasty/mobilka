@@ -14,7 +14,9 @@ import UIKit
 
 protocol LoginBusinessLogic
 {
-  func greeting(request: Login.Something.Request)
+    func greeting()
+    func singInButtonTapped(request: Login.userInfo.Request)
+    
 }
 
 protocol LoginDataStore
@@ -24,20 +26,40 @@ protocol LoginDataStore
 
 class LoginInteractor: LoginBusinessLogic, LoginDataStore
 {
+    func singInButtonTapped(request: Login.userInfo.Request) {
+        presenter?.disableFields()
+        presenter?.clearMessage()
+        
+        worker = LoginWorker()
+        worker?.validate(request: request, onSuccess: {
+            self.worker?.singIn(request: request, onSuccess: {
+                print("Signed in")
+                self.presenter?.enableFields()
+            }, onFail: {
+                print("Denied")
+                self.presenter?.showValidateionError()
+                self.presenter?.enableFields()
+            })
+        }, onFail: {
+            self.presenter?.showValidateionError()
+            self.presenter?.enableFields()
+        })
+        
+    }
+    
+    
+    
+    
   var presenter: LoginPresentationLogic?
   var worker: LoginWorker?
   //var name: String = ""
   
   // MARK: Do something
   
-  func greeting(request: Login.Something.Request)
+  func greeting()
   {
     print("Hello Iteractor!")
-    
     worker = LoginWorker()
     worker?.greeting()
-    
-    let response = Login.Something.Response()
-    presenter?.presentSomething(response: response)
   }
 }

@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="znc-z7-BRs">
-                                <rect key="frame" x="16" y="44" width="382" height="410.5"/>
+                                <rect key="frame" x="16" y="44" width="382" height="420"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BiuldWithFirebase" translatesAutoresizingMaskIntoConstraints="NO" id="c4e-pG-WtP">
                                         <rect key="frame" x="41" y="0.0" width="300" height="168"/>
@@ -34,16 +34,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Vdz-CF-aNS">
-                                        <rect key="frame" x="0.0" y="264" width="382" height="146.5"/>
+                                        <rect key="frame" x="0.0" y="264" width="382" height="156"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ON6-kO-gGL">
-                                                <rect key="frame" x="170" y="0.0" width="42" height="20.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ON6-kO-gGL">
+                                                <rect key="frame" x="166" y="0.0" width="50" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="4D8-5R-t86"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="StF-H8-NUy">
-                                                <rect key="frame" x="0.0" y="34.5" width="382" height="68"/>
+                                                <rect key="frame" x="0.0" y="44" width="382" height="68"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTB-8K-6BS">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
@@ -72,7 +75,7 @@
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDN-mn-2UY">
-                                                <rect key="frame" x="116" y="116.5" width="150" height="30"/>
+                                                <rect key="frame" x="116" y="126" width="150" height="30"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="251-FA-aHd"/>
@@ -87,6 +90,9 @@
                                                         <integer key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="singInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fTd-P1-EpR"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -109,6 +115,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="alertLabel" destination="ON6-kO-gGL" id="LJL-LB-4zf"/>
                         <outlet property="emailTextField" destination="hTB-8K-6BS" id="4Zq-rA-qE5"/>
                         <outlet property="passwordTextField" destination="xV2-h2-fn2" id="cXs-GP-dkn"/>
                         <outlet property="singInButton" destination="yDN-mn-2UY" id="oMT-tn-i8z"/>

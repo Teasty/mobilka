@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>522836034849-sucppiof8g8hdobh2gjv2stjkdp9jt6h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.522836034849-sucppiof8g8hdobh2gjv2stjkdp9jt6h</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAJvNT1t2wH-7mGp9zbTtpNnOAPgL2VLho</string>
+	<key>GCM_SENDER_ID</key>
+	<string>522836034849</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>allikhachev.mobilka</string>
+	<key>PROJECT_ID</key>
+	<string>ios-best-practices</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ios-best-practices.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:522836034849:ios:278d2aa2488fe12a68aa60</string>
+	<key>DATABASE_URL</key>
+	<string>https://ios-best-practices.firebaseio.com</string>
+</dict>
+</plist>

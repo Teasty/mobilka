@@ -14,18 +14,35 @@ import UIKit
 
 protocol LoginPresentationLogic
 {
-  func presentSomething(response: Login.Something.Response)
+    func disableFields()
+    func enableFields()
+    func showNetworkError()
+    func showValidateionError()
+    func clearMessage()
 }
 
 class LoginPresenter: LoginPresentationLogic
 {
+    
+    func clearMessage() {
+        viewController?.clearMessage()
+    }
+    
+    func disableFields() {
+        viewController?.disableFields()
+    }
+    
+    func enableFields() {
+        viewController?.enableFields()
+    }
+    
+    func showNetworkError() {
+        viewController?.showNetworkError()
+    }
+    
+    func showValidateionError() {
+        viewController?.showValidateionError()
+    }
+    
   weak var viewController: LoginDisplayLogic?
-  
-  // MARK: Do something
-  
-  func presentSomething(response: Login.Something.Response)
-  {
-    let viewModel = Login.Something.ViewModel()
-    viewController?.displaySomething(viewModel: viewModel)
-  }
 }

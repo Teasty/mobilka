@@ -14,10 +14,16 @@ import UIKit
 
 protocol LoginDisplayLogic: class
 {
-  func displaySomething(viewModel: Login.Something.ViewModel)
+    func displaySomething(viewModel: Login.userInfo.ViewModel)
+    func disableFields()
+    func enableFields()
+    func showNetworkError()
+    func showValidateionError()
+    func stopEditing()
+    func clearMessage()
 }
 
-class LoginViewController: UIViewController, LoginDisplayLogic
+class LoginViewController: UIViewController
 {
     
   var interactor: LoginBusinessLogic?
@@ -72,23 +78,74 @@ class LoginViewController: UIViewController, LoginDisplayLogic
     super.viewDidLoad()
     greeting()
   }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        stopEditing()
+    }
   
   // MARK: Do something
   
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var singInButton: UIButton!
-  
+    @IBOutlet weak var alertLabel: UILabel!
+    
   func greeting()
   {
     print("Hello View!")
     
-    let request = Login.Something.Request()
-    interactor?.greeting(request: request)
+    interactor?.greeting()
   }
-  
-  func displaySomething(viewModel: Login.Something.ViewModel)
-  {
-    //nameTextField.text = viewModel.name
-  }
+    
+    
+    @IBAction func singInButtonTapped(_ sender: Any) {
+        
+        let request = Login.userInfo.Request(email: emailTextField.text!, password: passwordTextField.text!)
+        interactor?.singInButtonTapped(request: request)
+    }
+    
+    
+    
+    
+}
+
+extension LoginViewController: LoginDisplayLogic {
+    func clearMessage() {
+        alertLabel.text = ""
+    }
+    
+    func stopEditing() {
+            self.view.endEditing(true)
+    }
+    
+    
+    func displaySomething(viewModel: Login.userInfo.ViewModel) {
+        
+    }
+    
+    func disableFields() {
+        emailTextField.isEnabled = false
+        passwordTextField.isEnabled = false
+        singInButton.isEnabled = false
+        
+        print("Fields are disabled")
+    }
+    
+    func enableFields() {
+        emailTextField.isEnabled = true
+        passwordTextField.isEnabled = true
+        singInButton.isEnabled = true
+        
+        print("Fields are enabled")
+    }
+    
+    func showNetworkError() {
+        alertLabel.text = "There is a connection problem."
+    }
+    
+    func showValidateionError() {
+        alertLabel.text = "Email or password are incorrect."
+    }
+    
+    
 }

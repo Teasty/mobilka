@@ -14,6 +14,7 @@
 		A97785F9234F4E6B000D672A /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F3234F4E6B000D672A /* LoginModels.swift */; };
 		A97785FA234F4E6B000D672A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F4234F4E6B000D672A /* LoginViewController.swift */; };
 		A97785FB234F4E6B000D672A /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F5234F4E6B000D672A /* LoginInteractor.swift */; };
+		A97785FD234F98C4000D672A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A97785FC234F98C4000D672A /* GoogleService-Info.plist */; };
 		A9B1006B234F44140031D3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1006A234F44140031D3D6 /* AppDelegate.swift */; };
 		A9B10070234F44140031D3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B1006E234F44140031D3D6 /* Main.storyboard */; };
 		A9B10072234F44150031D3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9B10071234F44150031D3D6 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		A97785F3234F4E6B000D672A /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
 		A97785F4234F4E6B000D672A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A97785F5234F4E6B000D672A /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		A97785FC234F98C4000D672A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A9B10067234F44140031D3D6 /* mobilka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobilka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B1006A234F44140031D3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9B1006F234F44140031D3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,8 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				A97785F4234F4E6B000D672A /* LoginViewController.swift */,
-				A97785F5234F4E6B000D672A /* LoginInteractor.swift */,
 				A97785F0234F4E6B000D672A /* LoginPresenter.swift */,
+				A97785F5234F4E6B000D672A /* LoginInteractor.swift */,
 				A97785F1234F4E6B000D672A /* LoginWorker.swift */,
 				A97785F3234F4E6B000D672A /* LoginModels.swift */,
 				A97785F2234F4E6B000D672A /* LoginRouter.swift */,
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				A9B10071234F44150031D3D6 /* Assets.xcassets */,
+				A97785FC234F98C4000D672A /* GoogleService-Info.plist */,
 				A9B10076234F44150031D3D6 /* Info.plist */,
 				A97785EF234F4E3A000D672A /* StoryBoards */,
 				A97785EC234F4DE7000D672A /* Modules */,
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9B10075234F44150031D3D6 /* LaunchScreen.storyboard in Resources */,
+				A97785FD234F98C4000D672A /* GoogleService-Info.plist in Resources */,
 				A9B10072234F44150031D3D6 /* Assets.xcassets in Resources */,
 				A9B10070234F44140031D3D6 /* Main.storyboard in Resources */,
 			);

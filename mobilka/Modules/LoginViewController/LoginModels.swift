@@ -16,10 +16,17 @@ enum Login
 {
   // MARK: Use cases
   
-  enum Something
+  enum userInfo
   {
     struct Request
     {
+        let email: String
+        let password: String
+        
+        init(email: String, password: String) {
+            self.email = email
+            self.password = password
+        }
     }
     struct Response
     {

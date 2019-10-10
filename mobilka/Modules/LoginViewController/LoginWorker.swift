@@ -11,6 +11,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
 
 class LoginWorker
 {
@@ -18,4 +20,22 @@ class LoginWorker
   {
     print("Hello Worker!")
   }
+    
+    func singIn(request: Login.userInfo.Request, onSuccess: (() -> Void)?, onFail: (() -> Void)?) {
+        Auth.auth().signIn(withEmail: request.email, password: request.password) { (result, error) in
+            if error != nil{
+                print("Error: ", error!.localizedDescription)
+                onFail?()
+            } else{
+                onSuccess?()
+                print(result?.user.uid)
+            }
+        }
+    }
+    
+    func validate(request:Login.userInfo.Request, onSuccess: (() -> Void)?, onFail: (() -> Void)?) {
+            onSuccess?()
+    }
+    
+    
 }
