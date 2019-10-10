@@ -19,6 +19,7 @@ protocol LoginDisplayLogic: class
 
 class LoginViewController: UIViewController, LoginDisplayLogic
 {
+    
   var interactor: LoginBusinessLogic?
   var router: (NSObjectProtocol & LoginRoutingLogic & LoginDataPassing)?
 
@@ -69,17 +70,21 @@ class LoginViewController: UIViewController, LoginDisplayLogic
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    doSomething()
+    greeting()
   }
   
   // MARK: Do something
   
-  //@IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var singInButton: UIButton!
   
-  func doSomething()
+  func greeting()
   {
+    print("Hello View!")
+    
     let request = Login.Something.Request()
-    interactor?.doSomething(request: request)
+    interactor?.greeting(request: request)
   }
   
   func displaySomething(viewModel: Login.Something.ViewModel)

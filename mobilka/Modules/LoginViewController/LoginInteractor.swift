@@ -14,7 +14,7 @@ import UIKit
 
 protocol LoginBusinessLogic
 {
-  func doSomething(request: Login.Something.Request)
+  func greeting(request: Login.Something.Request)
 }
 
 protocol LoginDataStore
@@ -30,10 +30,12 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore
   
   // MARK: Do something
   
-  func doSomething(request: Login.Something.Request)
+  func greeting(request: Login.Something.Request)
   {
+    print("Hello Iteractor!")
+    
     worker = LoginWorker()
-    worker?.doSomeWork()
+    worker?.greeting()
     
     let response = Login.Something.Response()
     presenter?.presentSomething(response: response)

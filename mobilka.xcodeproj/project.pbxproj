@@ -69,12 +69,12 @@
 		A97785ED234F4DF0000D672A /* LoginViewController */ = {
 			isa = PBXGroup;
 			children = (
-				A97785F0234F4E6B000D672A /* LoginPresenter.swift */,
-				A97785F1234F4E6B000D672A /* LoginWorker.swift */,
-				A97785F2234F4E6B000D672A /* LoginRouter.swift */,
-				A97785F3234F4E6B000D672A /* LoginModels.swift */,
 				A97785F4234F4E6B000D672A /* LoginViewController.swift */,
 				A97785F5234F4E6B000D672A /* LoginInteractor.swift */,
+				A97785F0234F4E6B000D672A /* LoginPresenter.swift */,
+				A97785F1234F4E6B000D672A /* LoginWorker.swift */,
+				A97785F3234F4E6B000D672A /* LoginModels.swift */,
+				A97785F2234F4E6B000D672A /* LoginRouter.swift */,
 			);
 			path = LoginViewController;
 			sourceTree = "<group>";
@@ -83,7 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				A9B1006A234F44140031D3D6 /* AppDelegate.swift */,
-				A9B10076234F44150031D3D6 /* Info.plist */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -118,10 +117,11 @@
 		A9B10069234F44140031D3D6 /* mobilka */ = {
 			isa = PBXGroup;
 			children = (
-				A97785EF234F4E3A000D672A /* StoryBoards */,
-				A97785EE234F4E03000D672A /* Common */,
-				A97785EC234F4DE7000D672A /* Modules */,
 				A9B10071234F44150031D3D6 /* Assets.xcassets */,
+				A9B10076234F44150031D3D6 /* Info.plist */,
+				A97785EF234F4E3A000D672A /* StoryBoards */,
+				A97785EC234F4DE7000D672A /* Modules */,
+				A97785EE234F4E03000D672A /* Common */,
 			);
 			path = mobilka;
 			sourceTree = "<group>";

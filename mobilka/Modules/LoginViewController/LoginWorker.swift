@@ -14,7 +14,8 @@ import UIKit
 
 class LoginWorker
 {
-  func doSomeWork()
+  func greeting()
   {
+    print("Hello Worker!")
   }
 }
