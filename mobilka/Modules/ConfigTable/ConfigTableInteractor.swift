@@ -25,16 +25,12 @@ protocol ConfigTableDataStore
 class ConfigTableInteractor: ConfigTableBusinessLogic, ConfigTableDataStore
 {
   var presenter: ConfigTablePresentationLogic?
-  var worker: ConfigTableWorker?
   //var name: String = ""
   
   // MARK: Do something
   
   func doSomething(request: ConfigTable.DeviceInfo.Request)
   {
-    worker = ConfigTableWorker()
-    worker?.doSomeWork()
-    
     let response = ConfigTable.DeviceInfo.Response()
     presenter?.presentSomething(response: response)
   }

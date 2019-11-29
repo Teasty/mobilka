@@ -63,28 +63,47 @@ class ConfigTableViewController: UITableViewController, ConfigTableDisplayLogic
       }
     }
   }
-    private let keys = ["Name", "Model", "System", "Ver."]
-    private let info = [UIDevice.current.name, UIDevice.current.model, UIDevice.current.systemName, UIDevice.current.systemVersion]
-     let simpleTableIdentifier = "SimpleTableIdentifier"
+    private let cellIdentifier = "prototype"
+    private let viewModel = ConfigTable.DeviceInfo.ViewModel()
 
      // MARK:-
      // MARK: Table View Data Source Methods
-     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-         return info.count
-     }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+         switch section {
+         case 0:
+             return 4
+         default:
+             return 0
+         }
+    }
 
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         var cell = tableView.dequeueReusableCell(withIdentifier: simpleTableIdentifier)
-         if (cell == nil) {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)
+         /*if (cell == nil) {
              cell = UITableViewCell(
                  style: .value1,
-                 reuseIdentifier: simpleTableIdentifier)
-         }
+                 reuseIdentifier: cellIdentifier)
+         }*/
         
-        cell?.textLabel?.text = keys[indexPath.row]
-         cell?.detailTextLabel?.text = info[indexPath.row]
+        cell?.textLabel?.text = viewModel.keys[indexPath.row]
+        cell?.detailTextLabel?.text = viewModel.info[indexPath.row]
          return cell!
      }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 0:
+            return "Device"
+        case 1:
+            return "More"
+        default:
+            return "WTF"
+        }
+    }
 
   // MARK: View lifecycle
   
@@ -106,6 +125,7 @@ class ConfigTableViewController: UITableViewController, ConfigTableDisplayLogic
     
     func displaySomething(viewModel: ConfigTable.DeviceInfo.ViewModel)
   {
+    
     //
   }
 }

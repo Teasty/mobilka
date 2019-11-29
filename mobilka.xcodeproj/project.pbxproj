@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4F628C602355BA5B00490CF2 /* ConfigTablePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F628C5A2355BA5B00490CF2 /* ConfigTablePresenter.swift */; };
-		4F628C612355BA5B00490CF2 /* ConfigTableWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F628C5B2355BA5B00490CF2 /* ConfigTableWorker.swift */; };
 		4F628C622355BA5B00490CF2 /* ConfigTableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F628C5C2355BA5B00490CF2 /* ConfigTableRouter.swift */; };
 		4F628C632355BA5B00490CF2 /* ConfigTableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F628C5D2355BA5B00490CF2 /* ConfigTableModels.swift */; };
 		4F628C642355BA5B00490CF2 /* ConfigTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F628C5E2355BA5B00490CF2 /* ConfigTableViewController.swift */; };
@@ -30,7 +29,6 @@
 /* Begin PBXFileReference section */
 		1E6FC934A7E10902F06D6B95 /* Pods_mobilka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobilka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F628C5A2355BA5B00490CF2 /* ConfigTablePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTablePresenter.swift; sourceTree = "<group>"; };
-		4F628C5B2355BA5B00490CF2 /* ConfigTableWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTableWorker.swift; sourceTree = "<group>"; };
 		4F628C5C2355BA5B00490CF2 /* ConfigTableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTableRouter.swift; sourceTree = "<group>"; };
 		4F628C5D2355BA5B00490CF2 /* ConfigTableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTableModels.swift; sourceTree = "<group>"; };
 		4F628C5E2355BA5B00490CF2 /* ConfigTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTableViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				4F628C5A2355BA5B00490CF2 /* ConfigTablePresenter.swift */,
-				4F628C5B2355BA5B00490CF2 /* ConfigTableWorker.swift */,
 				4F628C5C2355BA5B00490CF2 /* ConfigTableRouter.swift */,
 				4F628C5D2355BA5B00490CF2 /* ConfigTableModels.swift */,
 				4F628C5E2355BA5B00490CF2 /* ConfigTableViewController.swift */,
@@ -291,7 +288,6 @@
 				A97785F8234F4E6B000D672A /* LoginRouter.swift in Sources */,
 				4F628C642355BA5B00490CF2 /* ConfigTableViewController.swift in Sources */,
 				4F628C652355BA5B00490CF2 /* ConfigTableInteractor.swift in Sources */,
-				4F628C612355BA5B00490CF2 /* ConfigTableWorker.swift in Sources */,
 				A97785F7234F4E6B000D672A /* LoginWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

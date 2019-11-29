@@ -26,6 +26,8 @@ enum ConfigTable
     }
     struct ViewModel
     {
+        let keys = ["Name", "Model", "System", "Ver."]
+        let info = [UIDevice.current.name, UIDevice.current.model, UIDevice.current.systemName, UIDevice.current.systemVersion]
     }
   }
 }
