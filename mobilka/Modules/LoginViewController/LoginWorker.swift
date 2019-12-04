@@ -16,10 +16,6 @@ import FirebaseFirestore
 
 class LoginWorker
 {
-  func greeting()
-  {
-    print("Hello Worker!")
-  }
     
     func singIn(request: Login.userInfo.Request, onSuccess: (() -> Void)?, onFail: (() -> Void)?) {
         Auth.auth().signIn(withEmail: request.email, password: request.password) { (result, error) in

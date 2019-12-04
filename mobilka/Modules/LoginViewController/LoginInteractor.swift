@@ -14,7 +14,6 @@ import UIKit
 
 protocol LoginBusinessLogic
 {
-    func greeting()
     func singInButtonTapped(request: Login.userInfo.Request)
     
 }
@@ -35,6 +34,7 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore
             self.worker?.singIn(request: request, onSuccess: {
                 print("Signed in")
                 self.presenter?.enableFields()
+                self.presenter?.login()
             }, onFail: {
                 print("Denied")
                 self.presenter?.showValidateionError()
@@ -55,11 +55,4 @@ class LoginInteractor: LoginBusinessLogic, LoginDataStore
   //var name: String = ""
   
   // MARK: Do something
-  
-  func greeting()
-  {
-    print("Hello Iteractor!")
-    worker = LoginWorker()
-    worker?.greeting()
-  }
 }

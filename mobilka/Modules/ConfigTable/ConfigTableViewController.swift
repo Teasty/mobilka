@@ -66,7 +66,9 @@ class ConfigTableViewController: UITableViewController, ConfigTableDisplayLogic
     private let cellIdentifier = "prototype"
     private let viewModel = ConfigTable.DeviceInfo.ViewModel()
 
-     // MARK:-
+    
+    
+    
      // MARK: Table View Data Source Methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
          switch section {
@@ -114,6 +116,12 @@ class ConfigTableViewController: UITableViewController, ConfigTableDisplayLogic
   }
   
   // MARK: Do something
+    @IBAction func menuButtonTapped(_ sender: Any) {
+        guard let menuVC = storyboard?.instantiateViewController(withIdentifier: "Menu") else {return}
+        menuVC.modalPresentationStyle = .overCurrentContext
+        menuVC.transitioningDelegate = self
+        present(menuVC, animated: true)
+    }
     @IBOutlet var table: UITableView!
     func doSomething()
   {
@@ -122,10 +130,24 @@ class ConfigTableViewController: UITableViewController, ConfigTableDisplayLogic
     
   }
     
+    let transition = SlideTransition()
+    
     
     func displaySomething(viewModel: ConfigTable.DeviceInfo.ViewModel)
   {
     
     //
   }
+}
+
+extension ConfigTableViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = true
+        return transition
+    }
+    
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transition.isPresenting = false
+        return transition
+    }
 }

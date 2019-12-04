@@ -19,10 +19,14 @@ protocol LoginPresentationLogic
     func showNetworkError()
     func showValidateionError()
     func clearMessage()
+    func login()
 }
 
 class LoginPresenter: LoginPresentationLogic
 {
+    func login() {
+        viewController?.login()
+    }
     
     func clearMessage() {
         viewController?.clearMessage()

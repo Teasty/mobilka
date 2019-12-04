@@ -13,6 +13,8 @@
 		4F628C642355BA5B00490CF2 /* ConfigTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F628C5E2355BA5B00490CF2 /* ConfigTableViewController.swift */; };
 		4F628C652355BA5B00490CF2 /* ConfigTableInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F628C5F2355BA5B00490CF2 /* ConfigTableInteractor.swift */; };
 		8A1A587CEC931BAD03EE3E39 /* Pods_mobilka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E6FC934A7E10902F06D6B95 /* Pods_mobilka.framework */; };
+		A954CA9D23915310008E67E6 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954CA9C23915310008E67E6 /* MenuViewController.swift */; };
+		A954CA9F2391556E008E67E6 /* SlideTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A954CA9E2391556E008E67E6 /* SlideTransition.swift */; };
 		A97785F6234F4E6B000D672A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F0234F4E6B000D672A /* LoginPresenter.swift */; };
 		A97785F7234F4E6B000D672A /* LoginWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F1234F4E6B000D672A /* LoginWorker.swift */; };
 		A97785F8234F4E6B000D672A /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F2234F4E6B000D672A /* LoginRouter.swift */; };
@@ -20,6 +22,20 @@
 		A97785FA234F4E6B000D672A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F4234F4E6B000D672A /* LoginViewController.swift */; };
 		A97785FB234F4E6B000D672A /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97785F5234F4E6B000D672A /* LoginInteractor.swift */; };
 		A97785FD234F98C4000D672A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A97785FC234F98C4000D672A /* GoogleService-Info.plist */; };
+		A9AC19562396AE200010A96C /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC19502396AE200010A96C /* MapPresenter.swift */; };
+		A9AC19572396AE200010A96C /* MapWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC19512396AE200010A96C /* MapWorker.swift */; };
+		A9AC19582396AE200010A96C /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC19522396AE200010A96C /* MapRouter.swift */; };
+		A9AC19592396AE200010A96C /* MapModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC19532396AE200010A96C /* MapModels.swift */; };
+		A9AC195A2396AE200010A96C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC19542396AE200010A96C /* MapViewController.swift */; };
+		A9AC195B2396AE200010A96C /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC19552396AE200010A96C /* MapInteractor.swift */; };
+		A9AC195E2396C7300010A96C /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC195D2396C7300010A96C /* WebViewController.swift */; };
+		A9AC19662396CD740010A96C /* CreationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC19602396CD740010A96C /* CreationPresenter.swift */; };
+		A9AC19672396CD740010A96C /* CreationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC19612396CD740010A96C /* CreationWorker.swift */; };
+		A9AC19682396CD740010A96C /* CreationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC19622396CD740010A96C /* CreationRouter.swift */; };
+		A9AC19692396CD740010A96C /* CreationModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC19632396CD740010A96C /* CreationModels.swift */; };
+		A9AC196A2396CD740010A96C /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC19642396CD740010A96C /* CreationViewController.swift */; };
+		A9AC196B2396CD740010A96C /* CreationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AC19652396CD740010A96C /* CreationInteractor.swift */; };
+		A9AFC76A2397ED6300E97CB6 /* GyroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AFC7692397ED6300E97CB6 /* GyroscopeViewController.swift */; };
 		A9B1006B234F44140031D3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B1006A234F44140031D3D6 /* AppDelegate.swift */; };
 		A9B10070234F44140031D3D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9B1006E234F44140031D3D6 /* Main.storyboard */; };
 		A9B10072234F44150031D3D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9B10071234F44150031D3D6 /* Assets.xcassets */; };
@@ -34,6 +50,8 @@
 		4F628C5E2355BA5B00490CF2 /* ConfigTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTableViewController.swift; sourceTree = "<group>"; };
 		4F628C5F2355BA5B00490CF2 /* ConfigTableInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigTableInteractor.swift; sourceTree = "<group>"; };
 		8E1E8E15ACF150139EF429EA /* Pods-mobilka.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobilka.debug.xcconfig"; path = "Target Support Files/Pods-mobilka/Pods-mobilka.debug.xcconfig"; sourceTree = "<group>"; };
+		A954CA9C23915310008E67E6 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		A954CA9E2391556E008E67E6 /* SlideTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTransition.swift; sourceTree = "<group>"; };
 		A97785F0234F4E6B000D672A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		A97785F1234F4E6B000D672A /* LoginWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWorker.swift; sourceTree = "<group>"; };
 		A97785F2234F4E6B000D672A /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -41,6 +59,20 @@
 		A97785F4234F4E6B000D672A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A97785F5234F4E6B000D672A /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		A97785FC234F98C4000D672A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9AC19502396AE200010A96C /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		A9AC19512396AE200010A96C /* MapWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapWorker.swift; sourceTree = "<group>"; };
+		A9AC19522396AE200010A96C /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		A9AC19532396AE200010A96C /* MapModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModels.swift; sourceTree = "<group>"; };
+		A9AC19542396AE200010A96C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		A9AC19552396AE200010A96C /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		A9AC195D2396C7300010A96C /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		A9AC19602396CD740010A96C /* CreationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationPresenter.swift; sourceTree = "<group>"; };
+		A9AC19612396CD740010A96C /* CreationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationWorker.swift; sourceTree = "<group>"; };
+		A9AC19622396CD740010A96C /* CreationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationRouter.swift; sourceTree = "<group>"; };
+		A9AC19632396CD740010A96C /* CreationModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationModels.swift; sourceTree = "<group>"; };
+		A9AC19642396CD740010A96C /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
+		A9AC19652396CD740010A96C /* CreationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationInteractor.swift; sourceTree = "<group>"; };
+		A9AFC7692397ED6300E97CB6 /* GyroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroscopeViewController.swift; sourceTree = "<group>"; };
 		A9B10067234F44140031D3D6 /* mobilka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mobilka.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9B1006A234F44140031D3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9B1006F234F44140031D3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,11 +97,11 @@
 		4F628C582355BA3700490CF2 /* ConfigTable */ = {
 			isa = PBXGroup;
 			children = (
+				4F628C5E2355BA5B00490CF2 /* ConfigTableViewController.swift */,
+				4F628C5F2355BA5B00490CF2 /* ConfigTableInteractor.swift */,
 				4F628C5A2355BA5B00490CF2 /* ConfigTablePresenter.swift */,
 				4F628C5C2355BA5B00490CF2 /* ConfigTableRouter.swift */,
 				4F628C5D2355BA5B00490CF2 /* ConfigTableModels.swift */,
-				4F628C5E2355BA5B00490CF2 /* ConfigTableViewController.swift */,
-				4F628C5F2355BA5B00490CF2 /* ConfigTableInteractor.swift */,
 			);
 			path = ConfigTable;
 			sourceTree = "<group>";
@@ -85,8 +117,12 @@
 		A97785EC234F4DE7000D672A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A9AC195F2396CCF10010A96C /* Add contact */,
+				A9AC195C2396AE2C0010A96C /* Map */,
 				4F628C582355BA3700490CF2 /* ConfigTable */,
 				A97785ED234F4DF0000D672A /* LoginViewController */,
+				A9AC195D2396C7300010A96C /* WebViewController.swift */,
+				A9AFC7692397ED6300E97CB6 /* GyroscopeViewController.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -108,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				A9B1006A234F44140031D3D6 /* AppDelegate.swift */,
+				A954CA9C23915310008E67E6 /* MenuViewController.swift */,
+				A954CA9E2391556E008E67E6 /* SlideTransition.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -119,6 +157,32 @@
 				A9B1006E234F44140031D3D6 /* Main.storyboard */,
 			);
 			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		A9AC195C2396AE2C0010A96C /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC19542396AE200010A96C /* MapViewController.swift */,
+				A9AC19552396AE200010A96C /* MapInteractor.swift */,
+				A9AC19502396AE200010A96C /* MapPresenter.swift */,
+				A9AC19522396AE200010A96C /* MapRouter.swift */,
+				A9AC19532396AE200010A96C /* MapModels.swift */,
+				A9AC19512396AE200010A96C /* MapWorker.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		A9AC195F2396CCF10010A96C /* Add contact */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC19642396CD740010A96C /* CreationViewController.swift */,
+				A9AC19652396CD740010A96C /* CreationInteractor.swift */,
+				A9AC19602396CD740010A96C /* CreationPresenter.swift */,
+				A9AC19612396CD740010A96C /* CreationWorker.swift */,
+				A9AC19622396CD740010A96C /* CreationRouter.swift */,
+				A9AC19632396CD740010A96C /* CreationModels.swift */,
+			);
+			path = "Add contact";
 			sourceTree = "<group>";
 		};
 		A9B1005E234F44140031D3D6 = {
@@ -277,18 +341,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9AC19672396CD740010A96C /* CreationWorker.swift in Sources */,
+				A954CA9F2391556E008E67E6 /* SlideTransition.swift in Sources */,
+				A9AC19692396CD740010A96C /* CreationModels.swift in Sources */,
 				4F628C632355BA5B00490CF2 /* ConfigTableModels.swift in Sources */,
+				A9AC19572396AE200010A96C /* MapWorker.swift in Sources */,
+				A9AC195B2396AE200010A96C /* MapInteractor.swift in Sources */,
+				A9AC195E2396C7300010A96C /* WebViewController.swift in Sources */,
+				A9AC19562396AE200010A96C /* MapPresenter.swift in Sources */,
+				A9AC19582396AE200010A96C /* MapRouter.swift in Sources */,
 				4F628C622355BA5B00490CF2 /* ConfigTableRouter.swift in Sources */,
 				4F628C602355BA5B00490CF2 /* ConfigTablePresenter.swift in Sources */,
+				A9AC195A2396AE200010A96C /* MapViewController.swift in Sources */,
 				A97785FA234F4E6B000D672A /* LoginViewController.swift in Sources */,
 				A97785F6234F4E6B000D672A /* LoginPresenter.swift in Sources */,
 				A97785FB234F4E6B000D672A /* LoginInteractor.swift in Sources */,
 				A97785F9234F4E6B000D672A /* LoginModels.swift in Sources */,
+				A954CA9D23915310008E67E6 /* MenuViewController.swift in Sources */,
+				A9AC196B2396CD740010A96C /* CreationInteractor.swift in Sources */,
+				A9AC196A2396CD740010A96C /* CreationViewController.swift in Sources */,
 				A9B1006B234F44140031D3D6 /* AppDelegate.swift in Sources */,
 				A97785F8234F4E6B000D672A /* LoginRouter.swift in Sources */,
+				A9AC19592396AE200010A96C /* MapModels.swift in Sources */,
+				A9AFC76A2397ED6300E97CB6 /* GyroscopeViewController.swift in Sources */,
 				4F628C642355BA5B00490CF2 /* ConfigTableViewController.swift in Sources */,
 				4F628C652355BA5B00490CF2 /* ConfigTableInteractor.swift in Sources */,
+				A9AC19682396CD740010A96C /* CreationRouter.swift in Sources */,
 				A97785F7234F4E6B000D672A /* LoginWorker.swift in Sources */,
+				A9AC19662396CD740010A96C /* CreationPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +500,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

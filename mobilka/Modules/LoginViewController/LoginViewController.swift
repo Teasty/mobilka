@@ -21,6 +21,7 @@ protocol LoginDisplayLogic: class
     func showValidateionError()
     func stopEditing()
     func clearMessage()
+    func login()
 }
 
 class LoginViewController: UIViewController
@@ -76,7 +77,6 @@ class LoginViewController: UIViewController
   override func viewDidLoad()
   {
     super.viewDidLoad()
-    greeting()
   }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -89,13 +89,6 @@ class LoginViewController: UIViewController
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var singInButton: UIButton!
     @IBOutlet weak var alertLabel: UILabel!
-    
-  func greeting()
-  {
-    print("Hello View!")
-    
-    interactor?.greeting()
-  }
     
     
     @IBAction func singInButtonTapped(_ sender: Any) {
@@ -110,6 +103,17 @@ class LoginViewController: UIViewController
 }
 
 extension LoginViewController: LoginDisplayLogic {
+    func login() {
+        disableFields()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0){
+            let mainStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            let redViewController = mainStoryBoard.instantiateViewController(withIdentifier: "GitNavigation") as! UINavigationController
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            appDelegate.window?.rootViewController = redViewController
+        }
+    }
+    
     func clearMessage() {
         alertLabel.text = ""
     }
